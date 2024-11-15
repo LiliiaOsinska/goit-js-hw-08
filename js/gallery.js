@@ -92,9 +92,7 @@ function openModal(event) {
   event.preventDefault();
   if (event.target.nodeName === "IMG") {
     const instance = basicLightbox.create(`
-      <div class="modal">
       <img class="modal-image" src="${event.target.dataset.source}" alt="${event.target.alt}" width="1112" height="640">
-      </div>
       `);
     instance.show();
   }
